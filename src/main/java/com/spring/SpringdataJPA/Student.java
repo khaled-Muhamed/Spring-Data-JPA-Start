@@ -7,6 +7,7 @@ import java.time.Period;
 @Entity
 @Table(
         name = "student",
+        //next line is to modify unique email constraint name
         uniqueConstraints = {
                 @UniqueConstraint(name = "student_email_unique",columnNames = "email")
         }
