@@ -14,6 +14,9 @@ import java.time.Period;
 )
 public class Student {
 
+    public Student() {
+    }
+
     public Student(String firstName, String lastName, String email, Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
