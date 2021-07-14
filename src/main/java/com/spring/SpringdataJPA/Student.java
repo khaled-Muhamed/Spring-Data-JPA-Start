@@ -3,6 +3,7 @@ package com.spring.SpringdataJPA;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.List;
 
 @Entity
 @Table(
@@ -55,6 +56,9 @@ public class Student {
 
     @OneToOne(mappedBy = "student",orphanRemoval = true)
     private StudentCard studentCard;
+
+    @OneToMany(mappedBy = "student")
+    private List<Book> books;
 
     public long getId() {
         return id;
