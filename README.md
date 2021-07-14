@@ -1,7 +1,12 @@
 ## Project Title [ Spring-Data-JPA ]
 
-This is a starter project where I learn basics of Spring Data JPA . 
+This is a starter project where I learn basics of Spring Data JPA.
+and trying to build the next EER diagram. 
 
+
+ ![alt text](https://github.com/khaled-Muhamed/Spring-Data-JPA-Start/blob/master/J.PNG?raw=true)
+
+ 
 ## Getting Started
 
 update application.properties file with the database information.
@@ -40,4 +45,4 @@ https://github.com/amigoscode/spring-data-jpa-course
 ## Authors
   khaled Mohamed Abdelghany.
 
-  ![alt text](https://github.com/khaled-Muhamed/Spring-Data-JPA-Start/blob/master/J.PNG?raw=true)
+ 
