@@ -70,6 +70,7 @@ public class Student {
             inverseJoinColumns = {
                 @JoinColumn(name = "course_id")
     })
+
     private Set<Course> courses = new HashSet<>();
 
     public long getId() {
