@@ -3,7 +3,9 @@ package com.spring.SpringdataJPA;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(
@@ -59,6 +61,16 @@ public class Student {
 
     @OneToMany(mappedBy = "student")
     private List<Book> books;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "enrolment",
+            joinColumns = {
+                @JoinColumn(name = "student_id",nullable = false)
+            },
+            inverseJoinColumns = {
+                @JoinColumn(name = "course_id")
+    })
+    private Set<Course> courses = new HashSet<>();
 
     public long getId() {
         return id;
